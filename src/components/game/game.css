@@ -1,0 +1,66 @@
+
+.tictactoe {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    background: linear-gradient(120deg, #f0f4f8, #d9e7ff);
+
+
+}
+  
+  .status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background: linear-gradient(45deg, #ff6b6b, #f5a623);
+
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    border: 2px solid #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .cell:disabled {
+    cursor: not-allowed;
+    background-color: #f1f1f1;
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #333, #555);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-button:hover {
+    background: linear-gradient(90deg, #555, #333);
+}
+  
